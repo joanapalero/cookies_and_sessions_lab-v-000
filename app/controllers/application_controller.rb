@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :cart
 
-    #return an array of the items stored in the cart (utilizing the Rails session
+  #This will return an array of the items stored in the cart (utilizing the Rails session
     #method).
     def cart
       session[:cart] ||= []
